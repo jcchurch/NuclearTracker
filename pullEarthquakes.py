@@ -3,7 +3,7 @@ import csv
 import subprocess
 
 def pullFeed():
-    """Pulls the 24 feed of all earthquakes"""
+    """Pulls the 24 hour feed of all earthquakes"""
     url = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv"
     return [line.decode('utf-8') for line in urllib.request.urlopen(url).readlines()]
 

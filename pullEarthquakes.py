@@ -21,7 +21,7 @@ def buildTweet(record):
     return "{0} magnitude nuclear explosion, {1}".format(record[4], record[13])
 
 def compileTweets(nuclearRecords):
-    """Takes each nuclear record passes it over the buildTweet function."""
+    """Passes each nuclear record over the buildTweet function."""
     return [buildTweet(record) for record in nuclearRecords]
 
 def postTweet(tweet):
